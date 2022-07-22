@@ -30,8 +30,12 @@ const Projects = () => (
               </TagList>
             </div>
             <UtilityList>
-              <ExternalLinks href={project.visit} >Code</ExternalLinks>
-              <ExternalLinks href={project.source} >Source</ExternalLinks>
+              <ExternalLinks href={project.link} target='_blank' >Live Link</ExternalLinks>
+              {
+                project.isPrivate ? <ExternalLinks>Proprietary</ExternalLinks> :
+                  <ExternalLinks href={project.source} target='_blank' >Source</ExternalLinks>
+              }
+
             </UtilityList>
           </BlogCard>
         ))

@@ -2,15 +2,15 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
   width:100%;
-  height:100%;
+  height:auto;
   object-fit: cover;
   overflow: hidden;
 `
 
 export const GridContainer = styled.section`
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+padding: 2rem 0 2rem 0;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;
@@ -26,7 +26,7 @@ export const BlogCard = styled.div`
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
+  height: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -68,11 +68,12 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 2rem;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
-  text-align: justify;
+  text-align: start;
+  letter-spacing: 1px;
   @media ${(props) => props.theme.breakpoints.sm} {
     padding:.3rem
   
@@ -103,7 +104,9 @@ transition: 0.5s;
 
 export const TagList = styled.ul`
 display: flex;
-justify-content: space-around;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1.5rem;
 padding: 2rem;
 `
 export const Tag = styled.li`
