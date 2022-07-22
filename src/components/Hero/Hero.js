@@ -12,7 +12,7 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic sint, laborum sit laudantium explicabo.
+        This is Fozle Rabbi Shafi, an enthusiastic fullstack developer working with a range of technologies to actualize any idea into reality
       </SectionText>
       <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
     </LeftSection>
