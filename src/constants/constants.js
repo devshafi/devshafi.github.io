@@ -53,7 +53,7 @@ export const projects = [
     title: 'News Flash Website',
     description: "This is modern responsive news paper template designed with modern css techniques. This template supports both dark and light themes.",
     image: '/images/img-news-flash.PNG',
-    tags: ['CSS', 'CSS Grid', 'Flexbox','Dark Mode'],
+    tags: ['CSS', 'CSS Grid', 'Flexbox', 'Dark Mode'],
     isPrivate: false,
     link: 'https://react-ts-shopping-cart.netlify.app',
     code: 'https://github.com/devshafi/react-ts-shopping-cart',
@@ -73,8 +73,7 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2017, text: 'Started my journey', },
-  { year: 2018, text: 'Worked as a freelance developer', },
-  { year: 2019, text: 'Founded JavaScript Mastery', },
-  { year: 2020, text: 'Shared my projects with the world', },
-  { year: 2021, text: 'Started my own platform', },
+  { year: 2018, text: 'Android Developer', company: 'CRUX' },
+  { year: 2019, text: 'Fullstack developer (Remote)', company: 'Lighthouse Academy, Canada' },
+  { year: 2020, text: 'Fullstack developer (Remote)', company: 'OC Academy, Canada' },
 ];

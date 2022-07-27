@@ -44,6 +44,7 @@ export const CarouselItem = styled.div`
   border-radius: 3px;
   max-width: 196px;
 
+
   @media ${props => props.theme.breakpoints.md} {
     max-width: 124px;
   }
@@ -58,7 +59,7 @@ export const CarouselItem = styled.div`
     border-radius: 3px;
     overflow: visible;
     position: relative;
-    height: fit-content;
+    height: 100%;
     
     ${(props) => props.active === props.index ? `opacity: 1` : `opacity: 0.5`}; 
   }

@@ -6,10 +6,10 @@ import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './Techn
 const Technologies = () => (
   <Section id='tech'>
     <SectionDivider />
-    <br/>
+    <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-       
+      I have been working with different technologies for a couple of years and continuously adapting myself to become someone better and more proficient than yesterday.
     </SectionText>
     <List>
       <ListItem>
@@ -29,7 +29,7 @@ const Technologies = () => (
           <ListTitle>Back-end</ListTitle>
           <ListParagraph>
             Experience with <br />
-            Node and Databases
+            Node, Express, GraphQL, MongoDB, MySQL
           </ListParagraph>
 
         </ListContainer>
@@ -39,8 +39,8 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
-            Familiar with <br />
-            Figma/ Adobe XD
+            Experience with <br />
+            Bootstrap, Material UI, Vuetify, Figma
           </ListParagraph>
 
         </ListContainer>

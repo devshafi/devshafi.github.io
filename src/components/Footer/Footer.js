@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
@@ -24,15 +24,15 @@ const Footer = () => {
       </CompanyContainer>
       <SocialContainer>
 
-        <SocialIcons href='https://github.com'>
-          <AiFillGithub size='3rem' />
-        </SocialIcons>
-        <SocialIcons href='https://linkedin.com'>
-          <AiFillLinkedin size='3rem' />
-        </SocialIcons>
-        <SocialIcons href='https://instagram.com'>
-          <AiFillInstagram size='3rem' />
-        </SocialIcons>
+      <SocialIcons href='https://github.com/devshafi' target='_blank'>
+        <AiFillGithub size='3rem' />
+      </SocialIcons>
+      <SocialIcons href='https://www.linkedin.com/in/fozle-rabbi-shafi-07841511a/' target='_blank'>
+        <AiFillLinkedin size='3rem' />
+      </SocialIcons>
+      <SocialIcons href='https://www.facebook.com/frshafi' target='_blank'>
+        <AiFillFacebook size='3rem' />
+      </SocialIcons>
       </SocialContainer>
     </FooterWrapper>
   );

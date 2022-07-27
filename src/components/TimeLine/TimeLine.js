@@ -44,7 +44,7 @@ const Timeline = () => {
   return (
     <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
-      <SectionText> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit aliquam est id exercitationem nesciunt totam? </SectionText>
+      <SectionText> After completing the B.Sc. in Computer Science in 2019, I was really passionate about software development. It always gives me thrills when I encounter any exciting project to work with. Back then, I work with many local and international companies and completed many projects successfully.</SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -85,6 +85,7 @@ const Timeline = () => {
                     </CarouselItemImg>
                   </CarouselItemTitle>
                   <CarouselItemText>{item.text}</CarouselItemText>
+                  <CarouselItemText>{item?.company}</CarouselItemText>
                 </CarouselItem>
               </CarouselMobileScrollNode>
 
@@ -104,9 +105,9 @@ const Timeline = () => {
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider/>
+      <SectionDivider />
     </Section>
-    
+
   );
 };
 
