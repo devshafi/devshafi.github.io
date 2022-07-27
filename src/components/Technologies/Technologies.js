@@ -9,7 +9,7 @@ const Technologies = () => (
     <br/>
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore ipsam fugit itaque? Tempore excepturi itaque quidem suscipit pariatur eveniet dolorum?
+       
     </SectionText>
     <List>
       <ListItem>
@@ -18,7 +18,7 @@ const Technologies = () => (
           <ListTitle>Front-end</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            React, Next, Vue, Nuxt
           </ListParagraph>
 
         </ListContainer>
