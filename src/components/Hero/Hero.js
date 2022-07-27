@@ -13,7 +13,7 @@ const Hero = (props) => (
       </SectionTitle>
       <SectionText>
      
-        This is  <FocusSpan>Fozle Rabbi Shafi</FocusSpan>, an enthusiastic fullstack developer working with a range of technologies to actualize any idea into reality
+        This is  <FocusSpan>Fozle Rabbi Shafi,</FocusSpan> an enthusiastic fullstack developer working with a range of technologies to actualize any idea into reality
       </SectionText>
       
       <Button onClick={() => window.location = 'mailto:frshafi49@gmail.com'}>Contact Me</Button>
