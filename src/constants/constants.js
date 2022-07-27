@@ -55,8 +55,8 @@ export const projects = [
     image: '/images/img-news-flash.PNG',
     tags: ['CSS', 'CSS Grid', 'Flexbox', 'Dark Mode'],
     isPrivate: false,
-    link: 'https://react-ts-shopping-cart.netlify.app',
-    code: 'https://github.com/devshafi/react-ts-shopping-cart',
+    link: 'https://news-mag.netlify.app',
+    code: 'https://github.com/devshafi/newsmag',
     id: 5,
   },
   {
