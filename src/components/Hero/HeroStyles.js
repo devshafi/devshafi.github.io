@@ -17,3 +17,11 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+
+export const FocusSpan = styled.span`
+  /* background:linear-gradient(270deg, #00DBD8 0%, #B133FF 100%); */
+  background: rgba(0,0,0,.4);
+  color:#fff;
+  padding:0 1rem;
+`;

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { LeftSection, FocusSpan } from './HeroStyles';
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -12,8 +12,10 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        This is Fozle Rabbi Shafi, an enthusiastic fullstack developer working with a range of technologies to actualize any idea into reality
+     
+        This is  <FocusSpan>Fozle Rabbi Shafi</FocusSpan>, an enthusiastic fullstack developer working with a range of technologies to actualize any idea into reality
       </SectionText>
+      
       <Button onClick={() => window.location = 'mailto:frshafi49@gmail.com'}>Contact Me</Button>
     </LeftSection>
   </Section>
