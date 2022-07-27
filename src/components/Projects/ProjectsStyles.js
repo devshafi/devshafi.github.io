@@ -18,8 +18,7 @@ row-gap: 3rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  padding-bottom: 0;
+  padding: 2rem 1rem; 
 }
 
 `
@@ -70,11 +69,10 @@ export const Intro = styled.div`
 export const CardInfo = styled.p`
   width: 100%;
   padding: 0 2rem;
-  color: #e4e6e7;
-  font-style: 2rem;
+  /* font-style: 2rem; */
   line-height: 24px;
   text-align: start;
-  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
 `;
 
 
