@@ -108,8 +108,8 @@ export const publications = [
 ];
 
 export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Android Developer", company: "CRUX" },
-    { year: 2019, text: "Fullstack developer (Remote)", company: "Lighthouse Academy, Canada" },
-    { year: 2020, text: "Fullstack developer (Remote)", company: "OC Academy, Canada" }
+    { year: 2019, text: "B.Sc in CSE", company: "Metropolitan University Bangladesh" },
+    { year: 2022, text: "Software Engineer", company: "Programming Hero" },
+    { year: 2025, text: "M.Sc in Computing", company: "Queen's University, Canada" },
+    { year: 2025, text: "Ph.D. in Computing", company: "Queen's University, Canada" }
 ];
