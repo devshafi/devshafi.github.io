@@ -13,20 +13,19 @@ const Hero = (props) => (
       <ImageAndName>
         <ProfileImg src={image} alt="Profile Image" />
         <SectionTitle main center>
-          Shafi
-          Fozle Rabbi
+          Fozle Rabbi Shafi
         </SectionTitle>
       </ImageAndName>
       <SectionText>
-        Hi, I'm Shafi, a <FocusSpan>PhD student</FocusSpan> at Queen's University,
+        Hi, I'm Shafi, a <FocusSpan>PhD student</FocusSpan> at <FocusSpan>Queen's University</FocusSpan>,
         Canada. My research focuses on{" "}
         <FocusSpan>
           Generative AI, Machine Learning, Cybersecurity, and Software Engineering.
         </FocusSpan>
-        I'm particularly passionate about applying Generative AI to advance healthcare solutions and 
-        strengthen network security. With 4 published papers in reputable conferences and journals, 
-        plus over 4 years of industry experience in software engineering roles, I bring both academic 
-        rigor and practical expertise to my work.
+        As a continuous learner, I'm passionate about exploring cutting-edge technologies and their 
+        applications in healthcare and cybersecurity. Through my research journey and hands-on 
+        industry experience, I constantly seek to bridge the gap between theoretical knowledge and 
+        practical solutions, always staying curious about emerging trends in AI and technology.
       </SectionText>
 
       {/* <Button onClick={() => (window.location = "mailto:frshafi49@gmail.com")}>Contact Me</Button> */}
