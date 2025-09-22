@@ -18,10 +18,15 @@ const Header = () => (
         </Div1>
         <Div2>
             <li>
+                <Link href="#publications">
+                    <NavLink>Publications</NavLink>
+                </Link>
+            </li>
+            {/* <li>
                 <Link href="#projects">
                     <NavLink>Projects</NavLink>
                 </Link>
-            </li>
+            </li> */}
             <li>
                 <Link href="#tech">
                     <NavLink>Technologies</NavLink>
@@ -34,7 +39,7 @@ const Header = () => (
             </li>
         </Div2>
         <Div3>
-            <SocialIcons href="https://www.facebook.com/frshafi" target="_blank">
+            <SocialIcons href="https://scholar.google.ca/citations?user=2YkuKhcAAAAJ&hl=en" target="_blank">
                 <SiGooglescholar size="3rem" />
             </SocialIcons>
             <SocialIcons href="https://github.com/devshafi" target="_blank">

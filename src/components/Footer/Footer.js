@@ -32,7 +32,7 @@ const Footer = () => {
                 <Slogan>Turning ideas into reality, one line of code at a time.</Slogan>
             </CompanyContainer>
             <SocialContainer>
-                <SocialIcons href="https://www.facebook.com/frshafi" target="_blank">
+                <SocialIcons href="https://scholar.google.ca/citations?user=2YkuKhcAAAAJ&hl=en" target="_blank">
                     <SiGooglescholar size="3rem" />
                 </SocialIcons>
                 <SocialIcons href="https://github.com/devshafi" target="_blank">
