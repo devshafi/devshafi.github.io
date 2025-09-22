@@ -34,6 +34,7 @@ export const ProfileImg = styled.img`
 
     @media ${(props) => props.theme.breakpoints.sm} {
         margin-right: 0;
+        max-width: 70%;
     }
 `;
 

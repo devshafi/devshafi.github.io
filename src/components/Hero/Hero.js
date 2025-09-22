@@ -13,12 +13,12 @@ const Hero = (props) => (
       <ImageAndName>
         <ProfileImg src={image} alt="Profile Image" />
         <SectionTitle main center>
-          Shafi <br />
+          Shafi
           Fozle Rabbi
         </SectionTitle>
       </ImageAndName>
       <SectionText>
-        Hi, I'm Shafi, a <FocusSpan>graduate research student</FocusSpan> at Queen's University,
+        Hi, I'm Shafi, a <FocusSpan>PhD student</FocusSpan> at Queen's University,
         Canada. My research focuses on{" "}
         <FocusSpan>
           Generative AI, Machine Learning, Cybersecurity, and Software Engineering.
