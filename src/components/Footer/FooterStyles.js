@@ -101,6 +101,43 @@ export const Slogan = styled.p`
 	}
 `
 
+export const InspirationText = styled.p`
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 14px;
+	line-height: 22px;
+	padding: 0 1rem;
+	margin-top: 0.5rem;
+	letter-spacing: 0.01em;
+
+	@media ${props => props.theme.breakpoints.md}{
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	@media ${props => props.theme.breakpoints.sm}{
+		font-size: 12px;
+		line-height: 18px;
+		text-align: center;
+		padding: 0 0.5rem;
+	}
+`
+
+export const InspirationLink = styled.a`
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s ease;
+	
+	&:hover {
+		color: rgba(255, 255, 255, 0.9);
+		text-decoration: underline;
+	}
+
+	@media ${props => props.theme.breakpoints.sm}{
+		font-weight: 400;
+	}
+`
+
 export const SocialContainer = styled.div`
 	display: flex;
   align-items: center;

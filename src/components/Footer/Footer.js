@@ -11,7 +11,9 @@ import {
     LinkTitle,
     Slogan,
     SocialContainer,
-    SocialIconsContainer
+    SocialIconsContainer,
+    InspirationText,
+    InspirationLink
 } from "./FooterStyles";
 import { SiGooglescholar } from "react-icons/si";
 
@@ -30,6 +32,16 @@ const Footer = () => {
             </LinkList>
             <CompanyContainer>
                 <Slogan>Turning ideas into reality, one line of code at a time.</Slogan>
+                <InspirationText>
+                    Theme inspired by{" "}
+                    <InspirationLink 
+                        href="https://www.youtube.com/@javascriptmastery" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        JavaScript Mastery
+                    </InspirationLink>
+                </InspirationText>
             </CompanyContainer>
             <SocialContainer>
                 <SocialIcons href="https://scholar.google.ca/citations?user=2YkuKhcAAAAJ&hl=en" target="_blank">
