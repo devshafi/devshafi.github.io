@@ -87,11 +87,12 @@ ul {
   text-decoration: none;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
+  font-size: 1rem;
   color: #0d1b2c;
   background: linear-gradient(120deg, rgba(255, 122, 24, 0.14), rgba(12, 157, 138, 0.14));
   border: 1px solid var(--stroke);
-  padding: 0.36rem 0.62rem;
+  padding: 0.38rem 0.72rem;
   border-radius: 10px;
 }
 
