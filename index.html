@@ -69,17 +69,32 @@
   <div class="bg-shape shape-2" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a href="#home" class="brand">FRS</a>
-    <nav class="nav" aria-label="Primary Navigation">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="https://scholar.google.com/scholar?q=Fozle+Rabbi+Shafi" target="_blank" rel="noopener noreferrer">Scholar</a>
-      <a href="https://www.linkedin.com/in/fozle-rabbi-shafi-07841511a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-    </nav>
+    <div class="header-inner">
+      <a href="#home" class="brand">FRS</a>
+      <nav class="nav" aria-label="Primary Navigation">
+        <div class="nav-links">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#publications">Publications</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+        <a class="nav-download" href="assets/CV-Shafi.pdf" download="Fozle-Rabbi-Shafi-CV.pdf">Download CV</a>
+        <div class="nav-socials" aria-label="Social Links">
+          <a href="https://scholar.google.com/scholar?q=Fozle+Rabbi+Shafi" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 2 8l10 5 8-4v6h2V8L12 3Zm-6 9v4.5c0 1.8 2.7 3.5 6 3.5s6-1.7 6-3.5V12l-6 3-6-3Z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/fozle-rabbi-shafi-07841511a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6.94 8.5a1.78 1.78 0 1 1 0-3.56 1.78 1.78 0 0 1 0 3.56ZM5.4 9.9h3.1V19H5.4V9.9Zm5 0h2.97v1.24h.04c.41-.78 1.42-1.6 2.92-1.6 3.12 0 3.7 2.06 3.7 4.74V19h-3.1v-4.13c0-.98-.02-2.25-1.37-2.25-1.37 0-1.58 1.07-1.58 2.18V19h-3.1V9.9Z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -221,7 +236,7 @@
       <h2>Teaching Experience</h2>
       <div class="grid cards">
         <article class="card">
-          <h3>Head Teaching Assistant, CISC 498</h3>
+          <h3>Teaching Assistant, CISC 498</h3>
           <p class="meta">Queen's University | Sep 2025 - Present</p>
           <p>Mentored project teams, provided implementation guidance, and supported evaluation of deliverables and presentations.</p>
         </article>
@@ -288,7 +303,7 @@
       <p>Open to collaborations in AI research, LLM applications, and software engineering opportunities.</p>
       <p class="privacy-note">Privacy-first form with lightweight bot protection. No analytics or ad trackers are loaded.</p>
 
-      <form id="contact-form" class="contact-form" novalidate>
+      <form id="contact-form" class="contact-form" action="https://formsubmit.co/f.shafi@queensu.ca" method="POST" novalidate>
         <div class="form-grid">
           <label>
             Name
@@ -312,12 +327,13 @@
 
         <label id="human-check-label" data-answer="">
           <span id="human-check-question">Human check</span>
-          <input type="number" id="human-check-input" inputmode="numeric" required>
+          <input type="number" id="human-check-input" name="human_check" inputmode="numeric" required>
         </label>
 
         <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
         <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://devshafi.github.io/#contact">
         <input type="hidden" id="form-started-at" value="">
 
         <button class="btn btn-primary" type="submit">Send Message</button>
@@ -337,6 +353,6 @@
     <p>© <span id="year"></span> Fozle Rabbi Shafi</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20260331"></script>
 </body>
 </html>

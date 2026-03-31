@@ -1,5 +1,5 @@
 const reveals = document.querySelectorAll('.reveal');
-const navLinks = document.querySelectorAll('.nav a');
+const navLinks = document.querySelectorAll('.nav-link');
 const sections = [...document.querySelectorAll('main section[id]')];
 
 const revealObserver = new IntersectionObserver(
@@ -78,7 +78,7 @@ if (contactForm && formStatus && humanCheckLabel && humanCheckQuestion && humanC
     }
 
     const formData = new FormData(contactForm);
-    const endpoint = 'https://formsubmit.co/ajax/f.shafi@queensu.ca';
+    const endpoint = `https://formsubmit.co/ajax/${encodeURIComponent('f.shafi@queensu.ca')}`;
 
     try {
       const response = await fetch(endpoint, {
@@ -88,7 +88,16 @@ if (contactForm && formStatus && humanCheckLabel && humanCheckQuestion && humanC
       });
 
       if (!response.ok) {
-        throw new Error('Request failed');
+        let detail = 'Request failed';
+        try {
+          const payload = await response.json();
+          if (payload?.message) {
+            detail = payload.message;
+          }
+        } catch {
+          // Ignore JSON parse failures and keep default detail
+        }
+        throw new Error(detail);
       }
 
       formStatus.textContent = 'Thanks! Your message has been sent.';
@@ -96,7 +105,8 @@ if (contactForm && formStatus && humanCheckLabel && humanCheckQuestion && humanC
       createHumanCheck();
       formStartedAt.value = String(Date.now());
     } catch {
-      formStatus.textContent = 'Could not send right now. Please email me directly at f.shafi@queensu.ca.';
+      formStatus.textContent = 'Direct submit fallback started. If this is your first use, confirm the FormSubmit verification email once.';
+      contactForm.submit();
     }
   });
 }
