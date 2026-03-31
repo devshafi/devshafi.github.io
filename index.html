@@ -286,6 +286,44 @@
     <section id="contact" class="section card reveal">
       <h2>Contact</h2>
       <p>Open to collaborations in AI research, LLM applications, and software engineering opportunities.</p>
+      <p class="privacy-note">Privacy-first form with lightweight bot protection. No analytics or ad trackers are loaded.</p>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+        </div>
+
+        <label>
+          Subject
+          <input type="text" name="subject" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <label id="human-check-label" data-answer="">
+          <span id="human-check-question">Human check</span>
+          <input type="number" id="human-check-input" inputmode="numeric" required>
+        </label>
+
+        <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="_subject" value="Portfolio Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" id="form-started-at" value="">
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
       <div class="contact-grid">
         <a href="mailto:f.shafi@queensu.ca">f.shafi@queensu.ca</a>
         <a href="tel:+16135616661">+1 613 561 6661</a>
