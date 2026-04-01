@@ -21,6 +21,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
   font-family: "Sora", "Segoe UI", sans-serif;
   color: var(--text);
   background:
@@ -28,6 +30,46 @@ body {
     radial-gradient(circle at 88% 82%, rgba(15, 118, 110, 0.08), transparent 38%),
     linear-gradient(160deg, #f8fbff 0%, #f4f8fc 46%, #ecf3fb 100%);
   line-height: 1.65;
+}
+
+.cyber-grid-overlay,
+.cyber-scan-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cyber-grid-overlay {
+  z-index: 0;
+  opacity: 0.48;
+  mix-blend-mode: multiply;
+  background:
+    radial-gradient(circle at center, rgba(19, 32, 51, 0.045) 1px, transparent 1px) 0 0 / 18px 18px,
+    linear-gradient(rgba(19, 32, 51, 0.03) 1px, transparent 1px) 0 0 / 100% 44px,
+    linear-gradient(90deg, rgba(19, 32, 51, 0.03) 1px, transparent 1px) 0 0 / 44px 100%;
+}
+
+.cyber-scan-overlay {
+  z-index: 1;
+  opacity: 0.82;
+  background: linear-gradient(
+    112deg,
+    transparent 18%,
+    rgba(37, 99, 235, 0.06) 48%,
+    rgba(17, 159, 93, 0.05) 54%,
+    transparent 72%
+  );
+  background-size: 210% 210%;
+  animation: cyber-scan-sweep 14s ease-in-out infinite alternate;
+}
+
+@keyframes cyber-scan-sweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 h1,
@@ -201,6 +243,8 @@ ul {
 }
 
 main {
+  position: relative;
+  z-index: 2;
   width: min(1120px, calc(100% - 2rem));
   margin: 6.4rem auto 3rem;
 }
@@ -218,6 +262,8 @@ section[id] {
 .hero {
   padding-top: clamp(2.4rem, 5vw, 4.2rem);
   padding-bottom: clamp(2rem, 5vw, 4rem);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-layout {
@@ -225,6 +271,29 @@ section[id] {
   grid-template-columns: minmax(0, 1.2fr) minmax(220px, 330px);
   gap: clamp(1rem, 3vw, 2.2rem);
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-network {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.56;
+  background:
+    radial-gradient(circle at 14% 26%, rgba(15, 118, 110, 0.22) 0 2px, transparent 3px),
+    radial-gradient(circle at 33% 45%, rgba(17, 159, 93, 0.2) 0 2px, transparent 3px),
+    radial-gradient(circle at 57% 30%, rgba(37, 99, 235, 0.18) 0 2px, transparent 3px),
+    radial-gradient(circle at 74% 48%, rgba(15, 118, 110, 0.17) 0 2px, transparent 3px),
+    linear-gradient(24deg, transparent 33%, rgba(19, 32, 51, 0.06) 34%, rgba(19, 32, 51, 0.06) 36%, transparent 37%),
+    linear-gradient(-18deg, transparent 46%, rgba(19, 32, 51, 0.055) 47%, rgba(19, 32, 51, 0.055) 49%, transparent 50%);
+}
+
+.hero-network::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 18% 30%, rgba(17, 159, 93, 0.08), transparent 40%);
 }
 
 .kicker {
@@ -516,6 +585,8 @@ article.card {
 }
 
 .site-footer {
+  position: relative;
+  z-index: 2;
   text-align: center;
   padding: 0 1rem 2.1rem;
   color: var(--muted);
@@ -526,7 +597,7 @@ article.card {
   position: fixed;
   border-radius: 999px;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
   filter: blur(38px);
 }
 
@@ -666,6 +737,18 @@ article.card {
     margin-top: 6.3rem;
   }
 
+  .cyber-grid-overlay {
+    opacity: 0.28;
+  }
+
+  .cyber-scan-overlay {
+    opacity: 0.66;
+  }
+
+  .hero-network {
+    opacity: 0.34;
+  }
+
   .hero-layout {
     grid-template-columns: 1fr;
   }
@@ -686,5 +769,11 @@ article.card {
 
   .timeline-item::before {
     left: -1.36rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cyber-scan-overlay {
+    animation: none;
   }
 }
