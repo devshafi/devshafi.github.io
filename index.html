@@ -23,10 +23,19 @@
   <meta name="twitter:image" content="https://devshafi.github.io/assets/shafi_image.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
+  <link rel="preload" as="image" href="assets/shafi_image.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Fozle Rabbi Shafi Portfolio",
+      "url": "https://devshafi.github.io/"
+    }
+  </script>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -136,7 +145,7 @@
           </div>
         </div>
         <figure class="hero-photo-wrap">
-          <img class="hero-photo" src="assets/shafi_image.jpg" alt="Portrait of Fozle Rabbi Shafi">
+          <img class="hero-photo" src="assets/shafi_image.jpg" alt="Portrait of Fozle Rabbi Shafi" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
@@ -407,6 +416,6 @@
     <p>© <span id="year"></span> Fozle Rabbi Shafi</p>
   </footer>
 
-  <script src="script.js?v=20260401-1"></script>
+  <script src="script.js?v=20260401-1" defer></script>
 </body>
 </html>
