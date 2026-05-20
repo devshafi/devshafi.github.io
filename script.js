@@ -3,7 +3,7 @@
   if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const ctx = canvas.getContext('2d');
-  const COLORS = ['#119f5d', '#0f766e', '#2563eb'];
+  const COLORS = ['#059669', '#0d9488'];
   const CONNECTION_DIST = 135;
   const SPEED = 0.28;
 
